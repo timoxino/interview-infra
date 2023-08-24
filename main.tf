@@ -1,7 +1,7 @@
 data "google_project" "project" {
 }
 
-resource "google_service_account" "sa" {
+resource "google_service_account" "sa_cloud_run" {
   account_id   = "cloud-run-pubsub-invoker"
   display_name = "Cloud Run Pub/Sub Invoker"
 }
