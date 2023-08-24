@@ -14,7 +14,7 @@ resource "google_cloud_run_service_iam_binding" "binding" {
   location = "us-central1"
   service  = "sage"
   role     = "roles/run.invoker"
-  members  = ["serviceAccount:${google_service_account.sa.email}"]
+  members  = ["allUsers"]
 }
 
 resource "google_project_service_identity" "pubsub_agent" {
