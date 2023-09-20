@@ -8,6 +8,7 @@ resource "google_cloud_run_service" "service_sage" {
       }
     }
   }
+  status = "DISABLED"
 }
 
 resource "google_cloud_run_service" "service_toastmaster" {
@@ -20,6 +21,7 @@ resource "google_cloud_run_service" "service_toastmaster" {
       }
     }
   }
+  status = "DISABLED"
 }
 
 resource "google_cloud_run_service" "service_tamer" {
@@ -32,4 +34,5 @@ resource "google_cloud_run_service" "service_tamer" {
       }
     }
   }
+  status = "DISABLED"
 }
