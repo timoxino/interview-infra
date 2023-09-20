@@ -1,7 +1,7 @@
 module "common" {
-  source = "interview-infra/common"
+  source = "../common"
 }
 
 module "toastmaster" {
-  source = "interview-infra/binding-secret-sa-toastmaster"
+  source = "../binding-secret-sa-toastmaster"
 }
